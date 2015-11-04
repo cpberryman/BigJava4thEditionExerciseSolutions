@@ -3,10 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package bigjavachapter2exerciseanswers;
+package Chapter_2_Using_Objects;
 
 import java.awt.Color;
-import javax.swing.JFrame;
 
 /**
  * BrighterDemo for exercise P2.7
