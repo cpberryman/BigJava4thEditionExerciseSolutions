@@ -1,28 +1,24 @@
 package Chapter_3_Implementing_Classes;
 
 /**
- * Bank account class from the Big Java book.
+ * SavingsAccount for exercise P3.3.
  *
- * A bank account has a balance that can be changed by deposits and withdrawals.
+ * @author ChrisBerryman
  */
-public class BankAccount {
-
+public class SavingsAccount {
+    
     private double balance;
+    private final double interest;
 
     /**
-     * Constructs a bank account with a zero balance.
-     */
-    public BankAccount() {
-        balance = 0;
-    }
-
-    /**
-     * Constructs a bank account with a given balance.
+     * Constructs a savings account with a given balance and interest rate.
      *
-     * @param initialBalance the initial balance
+     * @param initialBalance the initial balance.
+     * @param interestRate the interest rate.
      */
-    public BankAccount(double initialBalance) {
+    public SavingsAccount(double initialBalance, double interestRate) {
         balance = initialBalance;
+        interest = interestRate;
     }
 
     /**
@@ -53,15 +49,10 @@ public class BankAccount {
     }
 
     /**
-     * Solution to exercise P3.2
-     * 
-     * Adds interest to an account based on a given interest rate.
-     *
-     * @param rate the interest rate.
+     * Adds the interest to an account.     *
      */
-    public void addInterest(double rate) {        
-        double interest = rate / 100;
-        balance += interest * balance;        
+    public void addInterest() {       
+        balance += interest / 100 * balance;        
     }
-
+    
 }
