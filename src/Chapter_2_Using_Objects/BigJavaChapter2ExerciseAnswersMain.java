@@ -9,7 +9,7 @@ package bigjavachapter2exerciseanswers;
  *
  * @author Chris
  */
-public class BigJavaChapter2ExerciseAnswers {
+public class BigJavaChapter2ExerciseAnswersMain {
 
     /**
      * Uncomment the method call to run the exercise answer program.

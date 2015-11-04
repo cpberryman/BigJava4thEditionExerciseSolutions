@@ -9,7 +9,7 @@ package bigjavachapter3exerciseanswers;
  *
  * @author Chris
  */
-public class BigJavaChapter3ExerciseAnswers {
+public class BigJavaChapter3ExerciseAnswersMain {
 
     /**
      * @param args the command line arguments
