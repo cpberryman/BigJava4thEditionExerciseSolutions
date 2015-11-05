@@ -13,7 +13,6 @@ public class EmployeeTester {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
         Employee harry = new Employee("Hacker, Harry", 50000);
         String name = harry.getName();
         System.out.println("Name: " + name);
@@ -24,7 +23,6 @@ public class EmployeeTester {
         harry.raiseSalary(10);
         System.out.println("Raised salary: " + harry.getSalary());
         System.out.println("Expected: 55000.0");
-
     }
 
 }
