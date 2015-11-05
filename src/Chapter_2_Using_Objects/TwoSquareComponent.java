@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Chapter_2_Using_Objects;
 
 import java.awt.Color;
@@ -25,23 +20,16 @@ public class TwoSquareComponent extends JComponent {
      */
     @Override
     public void paintComponent(Graphics g) {
-
-        Graphics2D g2 = (Graphics2D) g;
-        
+        Graphics2D g2 = (Graphics2D) g;        
         Rectangle s1 = new Rectangle(50, 50, 100, 100);
-        Rectangle s2 = new Rectangle(150, 150, 100, 100);
-        
+        Rectangle s2 = new Rectangle(150, 150, 100, 100);        
         Color c1 = new Color(225, 190, 190);
         g2.setColor(c1);
-
         g2.fill(s1);
-        g2.draw(s1);
-        
-        g2.setColor(Color.magenta);
-        
+        g2.draw(s1);        
+        g2.setColor(Color.magenta);        
         g2.fill(s2);
         g2.draw(s2);
-
     }
     
 }

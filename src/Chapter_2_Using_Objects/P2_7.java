@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Chapter_2_Using_Objects;
 
 import java.awt.Color;
@@ -19,13 +14,11 @@ public class P2_7 {
      * the Color#brighter method.
      */
     public void printColourValue() {
-
         Color myColor = new Color(50, 100, 150);
         Color c2 = myColor.brighter();
         System.out.println("Red:" + c2.getRed());
         System.out.println("Green:" + c2.getGreen());
         System.out.println("Blue:" + c2.getBlue());
-
     }
 
 }

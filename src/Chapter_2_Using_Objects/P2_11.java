@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Chapter_2_Using_Objects;
 
 import java.util.Random;
@@ -17,8 +12,7 @@ public class P2_11 {
     /**
      * Prints a random combination of six numbers.
      */
-    public void printCombination() {
-        
+    public void printCombination() {        
         Random generator = new Random();
         int firstNumber = generator.nextInt(49) + 1;
         int secondNumber = generator.nextInt(49) + 1;
@@ -32,8 +26,7 @@ public class P2_11 {
         System.out.println(thirdNumber);
         System.out.println(forthNumber);
         System.out.println(fithNumber);
-        System.out.println(sixthNumber);
-        
+        System.out.println(sixthNumber);        
     }
     
 }

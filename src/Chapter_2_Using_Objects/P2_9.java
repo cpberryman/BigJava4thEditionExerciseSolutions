@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Chapter_2_Using_Objects;
 
 import java.awt.Color;
@@ -19,16 +14,14 @@ public class P2_9 {
      * Prints the colour red, green and blue values of the colour displayed in
      * the frame after calling the Color#darker method.
      */
-    public void displayDarkerColour() {
-        
+    public void displayDarkerColour() {        
         JFrame frame = new JFrame();
         frame.setSize(200, 200);
         Color myColor = Color.RED;
         Color c2 = myColor.darker();
         frame.getContentPane().setBackground(c2);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setVisible(true);
-        
+        frame.setVisible(true);        
     }
 
 }

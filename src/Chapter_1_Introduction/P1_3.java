@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Chapter_1_Introduction;
 
 /**
@@ -15,8 +10,7 @@ public class P1_3 {
     /**
      * prints a face to the console.
      */
-    public void printFace() {
-        
+    public void printFace() {        
         //prints hair
         System.out.println("  /////");
         //prints eyes

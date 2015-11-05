@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Chapter_2_Using_Objects;
 
 import java.awt.Rectangle;
@@ -17,8 +12,7 @@ public class P2_3 {
     /**
      * prints location of rectangle after each call to Rectangle#translate.
      */
-    public void printFourRectangles() {
-        
+    public void printFourRectangles() {        
         Rectangle r = new Rectangle(5, 10, 20, 30);
         System.out.println(r);
         r.translate(20, 0);
@@ -26,8 +20,7 @@ public class P2_3 {
         r.translate(0, 30);
         System.out.println(r);
         r.translate(-20, 0);
-        System.out.println(r);
-        
+        System.out.println(r);        
     }
     
     

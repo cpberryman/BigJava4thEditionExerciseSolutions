@@ -1,13 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Chapter_2_Using_Objects;
 
 /**
+ * The main class to run the Big Java Chapter 2 exercise answers.
  *
- * @author Chris
+ * @author ChrisBerryman
  */
 public class BigJavaChapter2ExerciseAnswersMain {
 
@@ -147,7 +143,7 @@ public class BigJavaChapter2ExerciseAnswersMain {
         exercise_P2_11.printCombination();
 
     }
-    
+
     /**
      * Runs exercise P2.12.
      */
@@ -157,7 +153,7 @@ public class BigJavaChapter2ExerciseAnswersMain {
         exercise_P2_12.replaceLetters();
 
     }
-    
+
     /**
      * Runs exercise P2.13.
      */
@@ -167,7 +163,7 @@ public class BigJavaChapter2ExerciseAnswersMain {
         exercise_P2_13.switchLetters();
 
     }
-    
+
     /**
      * Runs exercise P2.14.
      */
@@ -177,7 +173,7 @@ public class BigJavaChapter2ExerciseAnswersMain {
         exercise_P2_14.createAndShowGUI();
 
     }
-    
+
     /**
      * Runs exercise P2.15.
      */
@@ -187,7 +183,7 @@ public class BigJavaChapter2ExerciseAnswersMain {
         exercise_P2_15.createAndShowGUI();
 
     }
-    
+
     /**
      * Runs exercise P2.16.
      */
@@ -197,7 +193,7 @@ public class BigJavaChapter2ExerciseAnswersMain {
         exercise_P2_16.createAndShowGUI();
 
     }
-    
+
     /**
      * Runs exercise P2.17.
      */
@@ -207,7 +203,7 @@ public class BigJavaChapter2ExerciseAnswersMain {
         exercise_P2_17.createAndShowGUI();
 
     }
-    
+
     /**
      * Runs exercise P2.18.
      */
@@ -217,5 +213,5 @@ public class BigJavaChapter2ExerciseAnswersMain {
         exercise_P2_18.createAndShowGUI();
 
     }
-    
+
 }
