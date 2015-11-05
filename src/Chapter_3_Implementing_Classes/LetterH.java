@@ -26,7 +26,7 @@ public class LetterH {
     }
 
     /**
-     * Draws the letter
+     * Draws the letter H
      *
      * @param g2 the graphics instance.
      */

@@ -12,6 +12,7 @@ public class LetterO {
     
     private final int xLeft;
     private final int yTop;
+    
     /**
      * Constructs a LetterO with a given top left corner.
      *
@@ -23,12 +24,13 @@ public class LetterO {
         yTop = y;        
     }
     /**
-     * Draws the letter
+     * Draws the letter O
      *
      * @param g2 the graphics instance.
      */
-    public void draw(Graphics2D g2) {
-        
+    public void draw(Graphics2D g2) {        
+        Ellipse2D.Double e = new Ellipse2D.Double(xLeft, yTop, 50, 150);  
+        g2.draw(e);
     }
     
 }
