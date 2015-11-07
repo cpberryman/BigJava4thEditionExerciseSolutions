@@ -7,7 +7,7 @@ import java.awt.geom.Point2D;
 import java.awt.Color;
 
 /**
- * Solution to exercise P5.19
+ * Solution to exercise P5.20
  *
  * @author ChrisBerryman
  */

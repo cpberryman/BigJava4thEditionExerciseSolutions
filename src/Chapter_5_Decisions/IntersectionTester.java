@@ -4,7 +4,7 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 /**
- * Solution to exercise P5.12
+ * Solution to exercise P5.20
  *
  * @author ChrisBerryman
  */
