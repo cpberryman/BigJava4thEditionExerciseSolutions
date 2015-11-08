@@ -3,7 +3,7 @@ package Chapter_6_Iteration;
 import java.util.Scanner;
 /**
  * Solution to exercise P6.3
- *
+ 
  * @author ChrisBerryman
  */
 public class CurrencyConverter {
@@ -16,7 +16,6 @@ public class CurrencyConverter {
         System.out.println("Enter today's price of one dollar in Euro: ");
         double euroPrice = in.nextDouble();
         boolean done = false;
-
         while(!done)
         {
             System.out.println("Enter dollar value or Q to quit: ");
@@ -30,4 +29,5 @@ public class CurrencyConverter {
             }
         }
     }
+
 }
