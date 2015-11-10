@@ -1,4 +1,3 @@
-
 package Chapter_5_Decisions;
 
 import java.util.Scanner;
@@ -40,6 +39,5 @@ public class P5_10 {
         } else {
             System.out.println(secondTime + " comes first"); 
         }        
-    }
-    
+    }    
 }
