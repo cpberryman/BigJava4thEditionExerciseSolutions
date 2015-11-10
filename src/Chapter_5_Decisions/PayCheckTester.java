@@ -20,7 +20,6 @@ public class PayCheckTester {
         double hoursWorked = in.nextDouble();
         PayCheck payCheck = new PayCheck();
         System.out.println("Weekly pay: " + payCheck.getWeeklyPay(hourlyWage, hoursWorked));
-
     }
 
 }
