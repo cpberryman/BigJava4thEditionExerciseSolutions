@@ -21,47 +21,33 @@ public class P6_2 {
         System.out.println("Please enter your eight digit credit card number: ");
         String creditCardNo = in.nextLine();
         int checkDigit = Character.getNumericValue(creditCardNo.charAt(creditCardNo.length() - 1));
-        int[] firstNumbers = new int[4];
-        firstNumbers[3] = Character.getNumericValue(checkDigit);
-        //System.out.println(firstNumbers[3]);
-
+        
+        //Computes sum starting with right most digit.
         for (int i = creditCardNo.length() - 1; i > 0; i -= 2) {
             char c = creditCardNo.charAt(i);
+            //decrements index by one if the character is a space etc.
             if (!Character.isDigit(c)) {
                 c = creditCardNo.charAt(i - 1);
                 i--;
-                //System.out.println(i - 1);
-                firstNumbers[i - 1] = Character.getNumericValue(c);
             }
-            int number = Character.getNumericValue(c);
-            sum1 += number;
-            if (i < creditCardNo.length() - 1) {
-                //System.out.println(i/2);
-                firstNumbers[i / 2] = Character.getNumericValue(c);
-            }
-
-            //firstNumbers[]
+            sum1 += Character.getNumericValue(c);
             char c2 = creditCardNo.charAt(i - 1);
-            int secondNumber = Character.getNumericValue(c2);
-            int secondNumberDoubled = secondNumber * 2;
-            secondNumberConcat += secondNumberDoubled;
+            secondNumberConcat += Character.getNumericValue(c2) * 2;
         }
-
+        //Computes sum for digits not included in previous step.
         for (int i = 0; i < secondNumberConcat.length(); i++) {
-            char c = secondNumberConcat.charAt(i);
-            int number = Character.getNumericValue(c);
-            sum2 += number;
+            sum2 += Character.getNumericValue(secondNumberConcat.charAt(i));
         }
-//System.out.println(sum2);
+        //adds the sums of the preceeding steps
         total += (sum1 + sum2);
+        
+        //prints whther the credit card is valid or not to the console.
+        //if it is not valid the correct check digit is also printed.
         if (Character.getNumericValue(total.charAt(total.length() - 1)) == 0) {
             System.out.println("Card is valid.");
         } else {
-            int sum = Integer.parseInt(total) % 10;
-            if (sum > checkDigit) {
-                checkDigit = (sum - checkDigit);
-            } else {
-                checkDigit -= sum;
+            if (Integer.parseInt(total) % 10 != 0) {
+                checkDigit = ((Integer.parseInt(creditCardNo) - Integer.parseInt(total) + 10) % 10);
             }
             System.out.println("Card is not valid: ");
             System.out.println("the check digit: " + checkDigit + " would make it valid.");
