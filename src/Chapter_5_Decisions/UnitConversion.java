@@ -13,20 +13,6 @@ public class UnitConversion {
     public static final double FEET_TO_METRES = 0.000189;
     public static final double MILES_TO_METRES = 1609.344;
 
-    public static final double INCHES_TO_FEET = 0.083333;
-    public static final double INCHES_TO_MILLIMETERS = 0.039370;
-    public static final double MILLIMETERS_TO_CENTIMETERS = 10;
-    public static final double MILLIMETERS_TO_METRES = 1000;
-    public static final double MILLIMETERS_TO_KILOMETRES = 1000000;
-    public static final double CENTIMETERS_TO_METRES = 100;
-    public static final double CENTIMETERS_TO_KILOMETRES = 100000;
-    public static final double METERS_TO_KILOMETRES = 1000;
-    public static final double FEET_TO_MILES = 0.00018939;
-    public static final double INCHES_TO_MILES = 63360;
-    public static final double FEET_TO_MILLIMETERS = 0.0032808;
-    public static final double MILES_TO_MILLIMETERS = 1609344;
-    public static final double MILLIMETERS_TO_MILES = 0.0000006214;
-
     /**
      * Constructs a unit conversion object
      *
