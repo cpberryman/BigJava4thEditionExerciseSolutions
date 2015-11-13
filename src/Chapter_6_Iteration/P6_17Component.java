@@ -28,7 +28,6 @@ public class P6_17Component extends JComponent {
                }
                g2.fillRect(xLeft, yTop, 20, 20);
             }
-            yTop += 10;
         }
     }
 

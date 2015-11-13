@@ -13,8 +13,7 @@ public class P6_1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        
+        Scanner in = new Scanner(System.in);        
         System.out.println("Enter temperatures: ");
         double highestValue = in.nextDouble();
         int highestMonth = 1;
@@ -27,5 +26,4 @@ public class P6_1 {
         }
         System.out.println("Month with highest temperature: " + highestMonth);
     }
-
 }
