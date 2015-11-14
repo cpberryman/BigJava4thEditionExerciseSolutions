@@ -38,16 +38,32 @@ public class Drunkard {
         }
         switch (getDirection()) {
             case 1:
-                currentXposition += 20;
+                if(currentXposition + 20 >= 200){
+                    currentXposition -= 20;
+                } else {
+                    currentXposition += 20;
+                } 
                 break;
             case 2:
-                currentYposition += 20;
+                if(currentYposition + 20 >= 200) {
+                    currentYposition -= 20;
+                } else {
+                    currentYposition += 20;
+                }  
                 break;
             case 3:
-                currentXposition -= 20;
+                if(currentXposition - 20 <= 0) {
+                    currentXposition += 20;
+                } else {
+                    currentXposition -= 20;
+                }
                 break;
             case 4:
-                currentYposition -= 20;
+                if(currentYposition - 20 <= 0) {
+                    currentYposition += 20;
+                } else {
+                   currentYposition -= 20; 
+                }
                 break;
         }
         moveCount++;

@@ -1,5 +1,4 @@
-
-package purserunner;
+package Chapter_7_Arrays_and_Array_Lists;
 
 import java.util.ArrayList;
 
@@ -18,9 +17,7 @@ public class Purse {
      * Constructs a purse object initialised with a zero length array list.
      */
     public Purse() {
-
         coins = new ArrayList<>();
-
     }
 
     /**
@@ -29,23 +26,18 @@ public class Purse {
      * @param coinName the coin name to be appended to the array list
      */
     public void addCoin(String coinName) {
-
         coins.add(coinName);
-
     }
 
     /**
      * Reverses the sequence of coins in a purse.
      */
     public void reverse() {
-
         ArrayList<String> temp = new ArrayList<>();
         int j = 0;
         for (int i = coins.size() - 1; i >= 0; i--) {
-
             String coin = coins.get(i);
             temp.add(j, coin);
-
             j++;
         }
         coins = temp;
@@ -57,11 +49,9 @@ public class Purse {
      * @param other the purse object from which to transfer
      */
     public void transfer(Purse other) {
-
         for (String coin : other.coins) {
             this.addCoin(coin);
         }
-
     }
 
     /**
@@ -73,7 +63,6 @@ public class Purse {
      * otherwise
      */
     public boolean sameContents(Purse other) {
-
         int matches = 0;
         for (int i = 0; i < coins.size(); i++) {
             if (coins.get(i).equals(other.coins.get(i))) {
@@ -92,27 +81,19 @@ public class Purse {
      * otherwise
      */
     public boolean sameCoins(Purse other) {
-
-      ArrayList<String> temp = new ArrayList<>(coins);
-      ArrayList<String> tempOther = new ArrayList<>(other.coins);
+        ArrayList<String> temp = new ArrayList<>(coins);
+        ArrayList<String> tempOther = new ArrayList<>(other.coins);
 
         if (temp.size() != tempOther.size()) {
             return false;
         }
 
-         for (String coin : temp) {
+        for (String coin : temp) {
             tempOther.remove(coin);
             System.out.println("Coins: " + coin);
             System.out.println("tempOther: " + tempOther);
         }
-
-        /*for (int i = 0; i < temp.size(); i++) {
-            String coin = temp.get(i);
-            tempOther.remove(coin);
-        }*/
-
         return tempOther.isEmpty();
-
     }
 
     /**
@@ -123,7 +104,6 @@ public class Purse {
      * @return the number of matches
      */
     public int find(String coin) {
-
         int matches = 0;
         for (int i = 0; i < coins.size(); i++) {
             if (coins.get(i).equals(coin)) {
@@ -140,11 +120,8 @@ public class Purse {
      */
     @Override
     public String toString() {
-
         String s = "Purse";
-
         return s + coins.toString();
-
     }
 
 }

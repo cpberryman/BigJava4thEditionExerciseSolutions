@@ -8,20 +8,25 @@ import java.awt.Graphics2D;
  * @author ChrisBerryman
  */
 public class Grid {
-    
+
+    /**
+     * Draws the grid.
+     *
+     * @param g2 the graphics context.
+     */
     public void draw(Graphics2D g2) {
         int xLeft;
         int yTop;
-        int toY = 200;
-        int toX = 200;
         for (int i = 0; i <= 20; i++) {
-            for (int j = 0; j <= 20; j++) {
+            for (int j = 0; j <= 20; j++) {                
                 xLeft = j * 20;
                 yTop = i * 20;
-                g2.drawLine(xLeft, yTop, xLeft, toY);
-                g2.drawLine(xLeft, yTop, toX, yTop);
+                System.out.println("xLeft:" + xLeft);
+                System.out.println("yTop: " + yTop);
+                g2.drawLine(xLeft, yTop, xLeft, 0);
+                g2.drawLine(xLeft, yTop, 0, yTop);
             }
         }
     }
-    
+
 }
