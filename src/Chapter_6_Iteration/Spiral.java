@@ -31,41 +31,40 @@ public class Spiral {
         int length = 0;
         int direction = 0;
         for (int i = 0; i < 5; i++) {
-           
-            
+
             if (i % 2 == 0) {
                 length += 20;
                 //System.out.println("length:" + length);
             }
             //System.out.println("direction:" + direction);
-             direction = (direction + 1) % 4;
-             System.out.println("direction:" + direction);
+            direction = (direction + 1) % 4;
+            System.out.println("direction:" + direction);
             if (direction == RIGHT) {
                 System.out.println("----RIGHT-----");
                 //System.out.println(length);
                 toX = x + length;
                 toY = y;
-                System.out.println("X: " + x);
-                System.out.println("Y: " + y);
-                System.out.println("ToX: " + toX);
-                System.out.println("ToY: " + toY);
+                //System.out.println("X: " + x);
+                //System.out.println("Y: " + y);
+                //System.out.println("ToX: " + toX);
+                //System.out.println("ToY: " + toY);
                 g2.drawLine(x, y, toX, toY);
-            } 
-            
+            }
+
             if (direction == UP) {
                 System.out.println("-----UP----");
                 //System.out.println(length);
                 x = toX;
                 y = toY;
                 toY = y - length;
-                System.out.println("X: " + x);
-                System.out.println("Y: " + y);
-                System.out.println("ToX: " + toX);
-                System.out.println("ToY: " + toY);
+                //System.out.println("X: " + x);
+                //System.out.println("Y: " + y);
+                //System.out.println("ToX: " + toX);
+                //System.out.println("ToY: " + toY);
                 g2.drawLine(x, y, toX, toY);
 
-            } 
-            
+            }
+
             if (direction == LEFT) {
                 System.out.println("-----LEFT----");
                 //System.out.println(length);
@@ -73,13 +72,13 @@ public class Spiral {
                 y = toY;
                 toX = x - length;
                 toY = y;
-                System.out.println("X: " + x);
-                System.out.println("Y: " + y);
-                System.out.println("ToX: " + toX);
-                System.out.println("ToY: " + toY);
+                //System.out.println("X: " + x);
+                //System.out.println("Y: " + y);
+                //System.out.println("ToX: " + toX);
+                //System.out.println("ToY: " + toY);
                 g2.drawLine(x, y, toX, toY);
-            } 
-            
+            }
+
             if (direction == DOWN) {
                 System.out.println("-----DOWN----");
                 //System.out.println(length);
@@ -87,18 +86,48 @@ public class Spiral {
                 y = toY;
                 toX = x;
                 toY = y + length;
-                System.out.println("X: " + x);
-                System.out.println("Y: " + y);
-                System.out.println("ToX: " + toX);
-                System.out.println("ToY: " + toY);
+                //System.out.println("X: " + x);
+                //System.out.println("Y: " + y);
+                //System.out.println("ToX: " + toX);
+                //System.out.println("ToY: " + toY);
                 g2.drawLine(x, y, toX, toY);
             }
-            
+
         }
     }
-    
+
     public void drawNextLine() {
-        
+        int direction = 0;
+        int length = 0;
+        for (int i = 0; i <= lines; i++) {
+            direction = (direction + 1) % 4;
+            System.out.println("i:" + i);
+            /*if (i % 2 == 0) {
+                length += 20;                
+            }
+            
+            
+            if (direction == RIGHT) {
+                System.out.println("----RIGHT-----");
+                System.out.println("length:" + length);
+            }
+
+            if (direction == UP) {
+                System.out.println("-----UP----");
+                System.out.println("length:" + length);
+            }
+
+            if (direction == LEFT) {
+                System.out.println("-----LEFT----");
+                System.out.println("length:" + length);
+            }
+
+            if (direction == DOWN) {
+                System.out.println("-----DOWN----");
+                System.out.println("length:" + length);
+            }*/
+
+        }
     }
     /* public void draw(Graphics2D g2) {
      System.out.println("X: " + x);

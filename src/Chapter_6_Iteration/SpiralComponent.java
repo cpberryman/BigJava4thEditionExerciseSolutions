@@ -15,8 +15,10 @@ public class SpiralComponent extends JComponent {
 
     @Override
     public void paintComponent(Graphics g) {
+        super.paintComponent(g);
         Graphics2D g2 = (Graphics2D) g;
-        spiral.draw(g2);
+        spiral.drawNextLine();
+         System.out.println("help");
     }
 
 }
