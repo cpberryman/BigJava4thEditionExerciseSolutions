@@ -11,14 +11,16 @@ import javax.swing.JComponent;
  */
 public class SpiralComponent extends JComponent {
 
-    private Spiral spiral = new Spiral(200, 200, 20);
-
+    /**
+     * Paints the spiral component.
+     *
+     * @param g the graphics context.
+     */
     @Override
     public void paintComponent(Graphics g) {
-        super.paintComponent(g);
         Graphics2D g2 = (Graphics2D) g;
-        spiral.drawNextLine();
-         System.out.println("help");
+        Spiral spiral = new Spiral(200, 200, 30);
+        spiral.draw(g2);
     }
 
 }
