@@ -1,24 +1,48 @@
 package Chapter_6_Iteration;
 
-import java.util.Scanner;
-
 /**
  * Solution to exercise P6.8
+ *
  * @author ChrisBerryman
  */
 public class FactorGenerator {
-    
+
+    private int numberToFactor;
+    private int factor = 2;
+
     /**
-     * @param args the command line arguments
+     * Constructs a FactorPrinter
+     *
+     * @param numberToFactor the number to factor
      */
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.println("Enter number to factor: ");
-        int numberToFactor = Integer.parseInt(in.next());
-        FactorPrinter fp = new FactorPrinter(numberToFactor);
-        while(fp.hasMoreFactors()) {
-            System.out.println(fp.nextFactor());
-        }
+    FactorGenerator(int numberToFactor) {
+        this.numberToFactor = numberToFactor;
     }
-    
+
+    /**
+     * Returns the next factor
+     *
+     * @return the next factor in the series.
+     */
+    public int nextFactor() {
+        if(numberToFactor % factor == 0) {
+            numberToFactor = numberToFactor / factor;
+        } else {
+            while(!(numberToFactor % factor == 0)) {
+                factor ++;                
+            }
+            numberToFactor = numberToFactor / factor;
+        }                
+        return factor;
+    }
+
+    /**
+     * Denotes whether there are more factors in the series.
+     *
+     * @return true if there are more factors, false otherwise.
+     */
+    public boolean hasMoreFactors() {
+        return numberToFactor > 1;
+    }
+
 }
