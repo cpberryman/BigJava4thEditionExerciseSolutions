@@ -6,8 +6,7 @@ import java.util.Random;
 /**
  * Solution to exercise P7.10
  *
- * A run marker simulates twenty random die tosses in order to establish if
- * there are any sequences of runs.
+ * Generates a sequence and delimits the longest run.
  *
  *
  * @author ChrisBerryman
@@ -32,8 +31,10 @@ public class LongestRun {
     }
 
     /**
+     * Marks the bounds of the longest run in a sequence and returns a string
+     * with the longest run delimited.
      *
-     * @return
+     * @return the sequence with the longest run in brackets.
      */
     public String getLongestRun() {
         boolean inRun = false;
@@ -73,11 +74,12 @@ public class LongestRun {
     }
 
     /**
+     * Delimits the longest run in a sequence
      *
-     * @param sequence
-     * @param startIndex
-     * @param runLength
-     * @return
+     * @param sequence the sequence to delimit the run
+     * @param startIndex the start index of the run
+     * @param runLength the length of the run
+     * @return a string with the longest run in brackets.
      */
     public String delimitLongestRun(ArrayList sequence, int startIndex, int runLength) {
         String s = "";
