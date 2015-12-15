@@ -5,21 +5,20 @@ import java.util.Random;
 
 /**
  * Solution to exercise P7.9
- * 
- * A run marker simulates twenty random die tosses in order to establish if
- * there are any sequences of runs.
+ *
+ * Delimits the runs in a sequence.
  *
  *
  * @author ChrisBerryman
  */
 public class RunMarker {
-    
+
     /**
-     * Returns an ArrayList with a sequence of random numbers between
-     * one and six.
+     * Returns an ArrayList with a sequence of random numbers between one and
+     * six.
      *
-     * @return the ArrayList with twenty elements containing random
-     * integers between one and six
+     * @return the ArrayList with twenty elements containing random integers
+     * between one and six
      */
     public ArrayList nextSequence() {
         ArrayList<Integer> sequence = new ArrayList<>();
@@ -34,8 +33,8 @@ public class RunMarker {
     /**
      * Returns the sequence of numbers with runs delimited by brackets i.e. ().
      *
-     * @return a String with the sequence of numbers with runs delimited
-     * by brackets
+     * @return a String with the sequence of numbers with runs delimited by
+     * brackets
      */
     public String delimitRuns() {
         String s = "";
