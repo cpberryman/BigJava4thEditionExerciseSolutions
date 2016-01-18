@@ -11,6 +11,8 @@ import java.util.Scanner;
  * This program demonstrates how to use a socket to communicate with a web
  * server. Supply the name of the host and the resource on the command-line, for
  * example java WebGet horstmann.com index.html
+ * 
+ * Solution to exercise P21.1 and P21.2.
  */
 public class WebGet {
 
@@ -50,8 +52,12 @@ public class WebGet {
             // Read server response
             while (in.hasNextLine()) {
                 String input = in.nextLine();
-                if(input.isEmpty()) break;
-                System.out.println(input);
+                //if(input.isEmpty()) break; //solution to exercise P21.1 
+                if(input.contains("<title>")) { //solution to exercise P21.2
+                    System.out.println(input);
+                    break;
+                }
+                
             }
         }
 
